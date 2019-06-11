@@ -9,34 +9,63 @@
     <body>
         <h1>Processing project by Barbara Piras </h1>
         <script type="text/processing">
-        
  void setup ()
 {
  size (400,400);
  background (0);
  frameRate (10);
- translate (45,45);
- fill (255,250,0);
- stroke (0);
- scale (0.5);
- circle (150,150,150);
-}
  
+ translate (60,60);
+ fill ( 255,255,0);
+
+ scale (0.5);
+ ellipse (120,110,119,119);
+ 
+}
+  
  void draw ()
-{
+  {
+ 
+  
+    
  pushMatrix ();
- translate(260,210);
- rotate(radians (45));
- fill (frameCount*10 %360);
+ translate(200,250);
+ rotate(radians  (frameCount*15%  360));
+ 
+
+ fill (frameCount*90 % 255,0,100);
+ 
  stroke (100);
- circle (10,50,50);
+ 
+ 
+
+ellipse (12,11,45,45);
+  
+
  popMatrix ();
+ 
  pushMatrix ();
- translate(230,255);
-rotate(radians (frameCount*10%360));
-fill (0,100,255);
- stroke (0);
-circle (50,50,50);
+ translate(200,250);
+
+ rotate(radians  (frameCount*15%  360));
+fill (frameCount*100 % 255,255,0);
+
+ stroke (50);
+ 
+ellipse (20,18,50,50);
+rotate(radians  (frameCount*15%  360));
+ popMatrix ();
+ 
+   pushMatrix ();
+ translate(200,250);
+ rotate(radians  (frameCount*15%  360));
+
+ fill (frameCount*100 % 200,0,255); 
+ stroke (100);
+ 
+ellipse (10,9,25,25);
+  
+
  popMatrix ();
 
 
